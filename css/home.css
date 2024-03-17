@@ -1,0 +1,420 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: #1d9cc8;
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    grid-template-rows: 100%;
+}
+
+#home-logo img {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    padding-top: 20px;
+    padding-left: 40px;
+    max-width: 20%;
+    height: auto;
+
+}
+
+.flex-container {
+    display: flex;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    grid-column-start: -1;
+}
+
+.flex-container>div {
+    margin: 10px;
+    padding: 0px;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+.dropbutton {
+    background-color: #164154;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 6px 15px;
+    text-decoration: none;
+    display: block;
+    font-family: monospace;
+    border: 1px solid;
+    font-size: 18px;
+
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #164154;
+}
+
+main {
+    /*margin: 25px;*/
+    grid-gap: 81px 10px;
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    grid-template-rows: 430px 430px 450px 450px;
+    grid-gap: 16px;
+    grid-template-areas:
+        'background-img1 background-img1'
+        'stock-image1 stock-image-content1'
+        'mutual-image1 mutual-image-content1'
+        'plan-cal1 plan-cal-content1'
+        'future-trade1 future-trade-content1 ';
+}
+
+.image-grid {
+    width: 100%;
+    height: 200px;
+}
+
+#background-img {
+    grid-area: background-img1;
+    /*margin-left: -25px;*/
+}
+
+#stock-image {
+    grid-area: stock-image1;
+    background: lightskyblue;
+}
+
+#stock-image-content {
+    grid-area: stock-image-content1;
+}
+
+#mutual-image-content {
+    grid: mutual-image-content1;
+}
+
+#mutual-image {
+    grid-area: mutual-image1;
+    margin-right: 20px;
+    background: darksalmon;
+}
+
+#plan-cal {
+    grid-area: plan-cal1;
+    background: steelblue;
+}
+
+#plan-cal-content {
+    grid-area: plan-cal-content1;
+}
+
+#future-trade {
+    grid-area: future-trade1;
+    margin-right: 20px;
+    background: cadetblue;
+    margin-bottom: 15px;
+}
+
+#future-trade-content {
+    grid-area: future-trade-content1;
+}
+
+#stock-image-content,
+#mutual-image-content,
+#future-trade-content,
+#plan-cal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    width: 104%;
+    height: 36px;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-content {
+    /*color: black;*/
+    color: white;
+    font-family: sans-serif;
+    font-size: 58px;
+}
+
+.profile-image {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    /*height: 402px;*/
+    height: fit-content;
+    margin-left: 20px;
+    width: 87%;
+
+}
+
+.profile-image:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.profile-image-container {
+    padding: 2px 16px;
+}
+
+#welcome {
+    margin-top: -18px;
+}
+
+#welcome-text {
+    margin-top: -26px;
+    font-size: 18px;
+    color: firebrick;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #088F8F;
+    height: auto;
+    width: 100%;
+    color: #fff;
+    overflow: auto;
+
+
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 0.5rem;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 30px;
+    font-size: 18px;
+    color: #cacdd2;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 1rem 0;
+}
+
+.socials li {
+    margin: 0 10px;
+    size: 3px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #fff;
+    border: 1.1px solid white;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.socials a i {
+    font-size: 1.1rem;
+    width: 20px;
+    transition: color .4s ease;
+}
+
+.socials a:hover i {
+    color: aqua;
+}
+
+.footer-bottom p {
+    float: left;
+    font-size: 14px;
+    word-spacing: 2px;
+    padding: 10px;
+}
+
+.footer-bottom p a {
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.footer-bottom span {
+    opacity: .4;
+    font-weight: 200;
+}
+
+.footer-menu {
+    float: right;
+}
+
+.footer-menu ul {
+    display: flex;
+}
+
+.footer-menu ul li {
+    padding-right: 10px;
+    display: block;
+}
+
+.footer-menu ul li a {
+    color: #cfd2d6;
+    text-decoration: none;
+}
+
+.footer-menu ul li a:hover {
+    color: #27bcda;
+}
+
+
+@media only screen and (max-width: 479px) {
+    #home-logo img {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        padding-top: 54px;
+        padding-left: 27px;
+        max-width: 60%;
+        /*need to change*/
+        height: auto;
+    }
+
+    .footer-menu ul {
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width:360px) and (max-width:740px) {
+    main {
+        display: block;
+    }
+
+    .centered {
+        top: 48%;
+        left: 54%;
+    }
+
+    .main-content {
+
+        font-size: 45px;
+    }
+
+    #stock-image,
+    #stock-image-content {
+        margin: 1.75pc;
+    }
+
+    #mutual-image,
+    #mutual-image-content {
+        margin: 1.75pc;
+        height: auto;
+    }
+
+    #plan-cal,
+    #plan-cal-content {
+        margin: 1.75pc;
+        height: auto;
+    }
+
+    #future-trade,
+    #future-trade-content {
+        margin: 1.75pc;
+        height: auto;
+    }
+
+    #welcome {
+        margin-top: -9px;
+    }
+}
+
+@media only screen and (min-width:375px) and (max-width : 667px) {
+    #background-img {
+        width: 100%;
+    }
+
+    .centered {
+        top: 55%;
+        left: 54%;
+    }
+
+    .main-content {
+        font-size: 50px;
+    }
+
+    main {
+        display: inherit;
+    }
+
+    .profile-image {
+        margin-left: 12px;
+        margin-top: 25px;
+        height: 500px;
+        margin-right: 11px;
+    }
+
+    #plan-cal {
+        margin-top: 3pc;
+    }
+
+    #future-trade {
+        margin-top: 3pc;
+        margin-bottom: 1pc;
+        margin-right: 11px;
+    }
+
+    #mutual-image {
+        margin-right: 11px;
+    }
+
+}
+
+@media only screen and (min-width:390px) and (max-width:844px) {
+    .centered {
+        top: 40%;
+    }
+}
+
+@media only screen and (min-width:414px) and (max-width:896px) {
+    .centered {
+        top: 40%;
+    }
+}

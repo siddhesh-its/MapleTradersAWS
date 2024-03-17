@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Maple Traders</title>
+    <link rel="icon" href="resources/favicon-32x32.png">
+    <link rel="stylesheet" href="/css/introduction_to_stock_market.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- google font poppins link  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <header>
+        <!--  site header -->
+        <a id="home-logo" href="home.html" title="Home page"><img src="resources/dollar.png" alt="Home page"></a>
+        <!-- referencing home /site landing page  -->
+        <div class="flex-container">
+            <!--site navigation-->
+            <div class="dropdown">
+                <button class="dropbutton">Stock</button>
+                <div class="dropdown-content">
+                    <a href="/introduction_to_stock_market.html">Stock Markets</a>
+                    <a href="/technical_analysis.html">Technical Analysis</a>
+                    <a href="/fundamental_analysis.html">Fundamental Analysis</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbutton">Funds</button>
+                <div class="dropdown-content">
+                    <a href="mutual-funds.html">Mutual Funds</a>
+                    <a href="finance-modules.html">Financial Planning Modules</a>
+                    <a href="personal-finance.html">Personal Finance</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbutton">Plans</button>
+                <div class="dropdown-content">
+                    <a href="retirement_plan_calculator.html">Retirement Plan</a>
+                    <a href="systematic plan calculator.html">Systematic Plan</a>
+                    <a href="summaries.html">Book Summaries</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbutton">Trade</button>
+                <div class="dropdown-content">
+                    <a href="future_trading.html">Future Trading</a>
+                    <a href="option_strategies.html">Option Strategies</a>
+                    <a href="market_tax.html">Market and Tax</a>
+                </div>
+            </div>
+            <div><a href="login_process.html"><img class=login src="resources/icons8-login-100.png"
+                        alt="Login Page"></a></div>
+            <div><a href="register_process.html"><img class=login src="resources/add-user.png" alt="Sign Up"></a>
+            </div>
+        </div> <!-- page title  -->
+    </header>
+    <!-- Article Section-->
+    <h1 id="topic">Introduction to Stock Markets</h1>
+    <!-- Sliding Images controlled with Javascript-->
+    <div id="images-slideshow">
+        <div class="slide-image">
+            <img src="/resources/page_1_image_1.jpeg">
+        </div>
+        <div class="slide-image">
+            <img src="/resources/page_1_image_2.jpeg">
+        </div>
+        <div class="slide-image">
+            <img src="/resources/page_1_image_3.jpeg">
+        </div>
+        <a class="arrow-btn previous" onclick="setPreviousImage()">❮</a>
+        <a class="arrow-btn next" onclick="setNextImage()">❯</a>
+    </div>
+    <article id="article-flex">
+        <dl id="image-block">
+            <div class="resource-item">
+                <!--Video with autoplay and muted-->
+                <video autoplay muted>
+                    <source src="/resources/record_introduction.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div id="table_section">
+                <p id="table_title">Overview</p>
+                <ul id="table_list">
+                    <li><a href="#topic_1">What Is the Stock Market?</a>
+                    <li><a href="#topic_2">How does the Stock Market Works?</a>
+                    <li><a href="#topic_3">What time do stock markets open?</a>
+                    <li><a href="#topic_4">Why to invest in the stock market?</a>
+                </ul>
+            </div>
+        </dl>
+        <dl id="content">
+            <dt id="topic_1">What Is the Stock Market?</dt>
+            <dd>The term stock market refers as a network of stock exchanges where traders and investors
+                buy and sell shares of publicly traded companies. Such financial activties are conducted through formal
+                exchanges that
+                operates under a defined set of regulations.
+                <br>
+                <br>
+                Private companies list shares of their stocks through initial public offering (IPO) process. Investors
+                purchases listed shares which helps the company to raise money to grow its business. When the company is
+                listed on a stock exchange it becomes public company and investor can bus and sell the company's shares.
+                <br>
+                <br>
+                Traders who are part of stock market can buy or sell shares on one or more of the stock exchanges that
+                are part of the stock market.
+            </dd>
+            <dt id="topic_2">How does the Stock Market Works?</dt>
+            <dd>
+                By selling shares of stock, the stock market helps companies to raise money to fund ther operations.
+                Companies get access to the capital which they need to operate and expand their businesses without
+                having to take on debt by listing their shares for sale on the stock exchanges.
+                <br>
+                <br>
+                Investor are taking benefit by exchanging their money for shares and they gain the benefits as their
+                shares of stock become more valuable over time when companies grow and expand their businesses.
+            </dd>
+            <dt id="topic_3">What time do stock markets open?</dt>
+            <dd>
+                For major stock markets such as the Toronto Stock Exchange (TSX), New York Stock Exchange (NYSE), and
+                the Nasdaq Stock Market (Nasdaq), regular trading hours are 9:30 a.m. to 4 p.m. ET, Monday to Friday,
+                except on statutory holidays, in which case the respective market would not be open – e.g., on Labour
+                Day, the US and Canadian stock markets are not open. North American trading is generally based on the
+                Eastern
+                Time Zone irrespective of where the exchange is located. Any trades that are entered with an online
+                brokerage
+                outside of regular trading hours are executed when markets open, unless otherwise indicated.
+                <br>
+                <br>
+                Investors may face lower risk if they execute their trades during regular market hours. This is because
+                prices in pre-market trading tend to be more volatile with higher potential bid-ask spreads. Most people
+                place trades during regular market hours, which can create more supply or demand of specific securities
+                and influence the price.
+            </dd>
+            <dt id="topic_4">Why to invest in the stock market?</dt>
+            <dd>
+                The most obvious reason to consider investing in the stock market is to help grow your money over time.
+                You’re also supporting other companies to grow and supporting the economy as a whole.
+                <br>
+                <br>
+                Although it takes time to understand the stock market and how it works, once you do, technology has made
+                it easy to be involved with your own financial portfolio. By investing, you can also increase your
+                financial literacy.
+                <br>
+                <br>
+                Of course, there are risks associated with investing in the stock market. You do need to educate
+                yourself and invest wisely.
+            </dd>
+        </dl>
+    </article>
+    <footer>
+        <div class="footer-content">
+
+            <h3>Maple Traders</h3>
+            <p>We are Maple traders help you with all your investing needs. <br>
+                Start your investing journey with mutual funds or start investing in the stock market.<br>
+                Get in touch today!</p>
+
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="footer-bottom">
+            <p>copyright &copy;2022 <a href="#">Maple Traders</a></p>
+
+        </div>
+
+        <div class="footer-menu">
+            <ul class="f-menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">Mutual Funds</a></li>
+                <li><a href="">Stock Market</a></li>
+                <li><a href="">Retirement Plan Calculator</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="/javascript/introduction_to_stock_market.js" /Js-Intro/lab8.js"></script>
+</body>
+
+</html>

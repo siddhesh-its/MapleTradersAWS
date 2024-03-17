@@ -1,0 +1,300 @@
+{
+   "description": "A focus of technical analysis is to determine if market prices reflect all relevant information impacting that market. A technical analyst looks at the history of Apple trading pattern rather than external drivers such as economic, fundamental, or social events. It is believed that price action tends to repeat itself due to investors' collective, patterned behavior. Hence technical analysis focuses on identifiable price trends and conditions",
+   "apple": {
+      "content": [
+         "The technical analysis module can be used to analyzes prices, returns, volume, basic money flow,and weekly bases. We use both bottom-up as well as top-down valuation methodologies to arrive at the intrinsic value of Apple Inc based on its technical analysis.",
+         "In general, a bottom-up approach, as applied to this company, focuses on Apple Inc price pattern first instead of the macroeconomic environment surrounding Apple Inc. As compared to a bottom-up approach, our top-down model examines the macroeconomic factors that affect the industry/economy before zooming in to Apple specific price patterns or momentum indicators."
+      ],
+      "figures": {
+         "title": {
+            "text": "Yearly stock price history graph"
+         },
+         "axisY": {
+            "title": "Price(USD)",
+            "includeZero": true
+         },
+         "axisX": {
+            "interval": 1
+         },
+         "data": [
+            {
+               "type": "line",
+               "toolTipContent": "{label}: {y} usd",
+               "dataPoints": [
+                  {
+                     "label": "Jan",
+                     "y": 1.28
+                  },
+                  {
+                     "label": "Feb",
+                     "y": 2.83
+                  },
+                  {
+                     "label": "March",
+                     "y": 3.55
+                  },
+                  {
+                     "label": "April",
+                     "y": 1.81
+                  },
+                  {
+                     "label": "May",
+                     "y": 2.37
+                  },
+                  {
+                     "label": "June",
+                     "y": 3.33
+                  },
+                  {
+                     "label": "July",
+                     "y": 4.06
+                  },
+                  {
+                     "label": "Aug",
+                     "y": 5.94
+                  },
+                  {
+                     "label": "Sep",
+                     "y": 6.41
+                  },
+                  {
+                     "label": "Oct",
+                     "y": 7.17
+                  },
+                  {
+                     "label": "Nov",
+                     "y": 8.17
+                  },
+                  {
+                     "label": "Dec",
+                     "y": 7.80
+                  }
+               ]
+            }
+         ]
+      }
+   },
+   "cocacola": {
+      "content": [
+         "Coca Cola analyst recommendations are determined by taking all analyst recommendations and averaging them as Strong Buy, Buy, Hold, Strong Sell or Sell. There is no one specific way to measure analysis performance other than comparing it to the past results via a very sophisticated attribution analysis.",
+         "Coca Cola analyst consensus and target price projections should be used in combination with other traditional techniques such as stock price forecasting, technical analysis, earnings estimate, and various momentum models."
+      ],
+      "figures": {
+         "title": {
+            "text": "Yearly stock price history graph"
+         },
+         "axisY": {
+            "title": "Price(USD)",
+            "includeZero": true
+         },
+         "axisX": {
+            "interval": 1
+         },
+         "data": [
+            {
+               "type": "line",
+               "toolTipContent": "{label}: {y} usd",
+               "dataPoints": [
+                  {
+                     "label": "Jan",
+                     "y": 4.28
+                  },
+                  {
+                     "label": "Feb",
+                     "y": 1.83
+                  },
+                  {
+                     "label": "March",
+                     "y": 2.55
+                  },
+                  {
+                     "label": "April",
+                     "y": 2.81
+                  },
+                  {
+                     "label": "May",
+                     "y": 3.37
+                  },
+                  {
+                     "label": "June",
+                     "y": 4.33
+                  },
+                  {
+                     "label": "July",
+                     "y": 5.06
+                  },
+                  {
+                     "label": "Aug",
+                     "y": 6.94
+                  },
+                  {
+                     "label": "Sep",
+                     "y": 6.41
+                  },
+                  {
+                     "label": "Oct",
+                     "y": 6.17
+                  },
+                  {
+                     "label": "Nov",
+                     "y": 7.17
+                  },
+                  {
+                     "label": "Dec",
+                     "y": 8.80
+                  }
+               ]
+            }
+         ]
+      }
+   },
+   "tesla": {
+      "content": [
+         "This study aims to discuss and analyze the financial position and performance of the US Tesla green technology company in the United States. This study uses a case study approach, financial data, and website methodologies to collect and analyze the research data. The case study is Tesla, Inc., which is a US electric vehicle and clean energy company based in Austin, Texas.",
+         "Tesla is a green technology company that produces and designs electric cars, battery energy storage from home to grid-scale, solar roof tiles and solar panels, and related products and services. Tesla is growing fastly by introducing new green products, and it is now one of the world's most valuable enterprises. It has a high market capitalization of almost US$1 trillion to become the world'smost valuable automaker.",
+         "This study concludes that Tesla has changed their strategy to become the most worldwide sales of purely battery electric vehicles, capturing 23% of the market and 16% of the plug-in electric battery in the market for 2020. It has also developed a significant installer of photovoltaic systems through its subsidiary Tesla Energy in the United States. One of the largest global battery energy-storage systems suppliers is Tesla Energy, with 3.99 gigawatt-hours installed in 2021."
+      ],
+      "figures": {
+         "title": {
+            "text": "Yearly stock price history graph"
+         },
+         "axisY": {
+            "title": "Price(USD)",
+            "includeZero": true
+         },
+         "axisX": {
+            "interval": 1
+         },
+         "data": [
+            {
+               "type": "line",
+               "toolTipContent": "{label}: {y} usd",
+               "dataPoints": [
+                  {
+                     "label": "Jan",
+                     "y": 8.28
+                  },
+                  {
+                     "label": "Feb",
+                     "y": 8.83
+                  },
+                  {
+                     "label": "March",
+                     "y": 7.55
+                  },
+                  {
+                     "label": "April",
+                     "y": 6.81
+                  },
+                  {
+                     "label": "May",
+                     "y": 7.37
+                  },
+                  {
+                     "label": "June",
+                     "y": 6.33
+                  },
+                  {
+                     "label": "July",
+                     "y": 4.06
+                  },
+                  {
+                     "label": "Aug",
+                     "y": 3.94
+                  },
+                  {
+                     "label": "Sep",
+                     "y": 3.41
+                  },
+                  {
+                     "label": "Oct",
+                     "y": 2.17
+                  },
+                  {
+                     "label": "Nov",
+                     "y": 1.17
+                  },
+                  {
+                     "label": "Dec",
+                     "y": 2.80
+                  }
+               ]
+            }
+         ]
+      }
+   },
+   "johnson": {
+      "content": [
+         "Johnson Johnson retains the Risk Adjusted Performance of 0.0245, market risk adjusted performance of 0.0344. Technical analysis makes it possible for you to employ historical prices and volume momentum with the intention to determine a pattern that calculates the direction of the firm's future prices.",
+         "We were able to interpolate nineteen technical drivers for Johnson Johnson, which can be compared to its competitors.Please check out information ratio. We strongly advise you to confirm regular market performance to make sure the company can sustain itself at a future point."
+      ],
+      "figures": {
+         "title": {
+            "text": "Yearly stock price history graph"
+         },
+         "axisY": {
+            "title": "Price(USD)",
+            "includeZero": true
+         },
+         "axisX": {
+            "interval": 1
+         },
+         "data": [
+            {
+               "type": "line",
+               "toolTipContent": "{label}: {y} usd",
+               "dataPoints": [
+                  {
+                     "label": "Jan",
+                     "y": 1.28
+                  },
+                  {
+                     "label": "Feb",
+                     "y": 2.83
+                  },
+                  {
+                     "label": "March",
+                     "y": 3.55
+                  },
+                  {
+                     "label": "April",
+                     "y": 4.81
+                  },
+                  {
+                     "label": "May",
+                     "y": 5.37
+                  },
+                  {
+                     "label": "June",
+                     "y": 4.33
+                  },
+                  {
+                     "label": "July",
+                     "y": 3.06
+                  },
+                  {
+                     "label": "Aug",
+                     "y": 2.94
+                  },
+                  {
+                     "label": "Sep",
+                     "y": 3.41
+                  },
+                  {
+                     "label": "Oct",
+                     "y": 5.17
+                  },
+                  {
+                     "label": "Nov",
+                     "y": 6.17
+                  },
+                  {
+                     "label": "Dec",
+                     "y": 7.80
+                  }
+               ]
+            }
+         ]
+      }
+   }
+}

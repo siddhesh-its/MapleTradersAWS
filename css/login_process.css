@@ -1,0 +1,265 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: lightgray;
+}
+
+header {
+    background-color: #1d9cc8;
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    grid-template-rows: 100%;
+}
+
+#home-logo img {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    padding-top: 20px;
+    padding-left: 40px;
+    max-width: 20%;
+    /*need to change*/
+    height: auto;
+
+}
+
+.flex-container {
+    display: flex;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    /*maybe need to change*/
+    grid-column-start: -1;
+}
+
+.flex-container>div {
+    margin: 10px;
+    padding: 0px;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+.dropbutton {
+    background-color: #164154;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 6px 15px;
+    text-decoration: none;
+    display: block;
+    font-family: monospace;
+    border: 1px solid;
+    font-size: 18px;
+
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #164154;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #088F8F;
+    height: auto;
+    width: 100%;
+    color: #fff;
+    overflow: auto;
+
+
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 0.5rem;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 30px;
+    font-size: 18px;
+    color: #cacdd2;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 1rem 0;
+}
+
+.socials li {
+    margin: 0 10px;
+    size: 3px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #fff;
+    border: 1.1px solid white;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.socials a i {
+    font-size: 1.1rem;
+    width: 20px;
+    transition: color .4s ease;
+}
+
+.socials a:hover i {
+    color: aqua;
+}
+
+.footer-bottom p {
+    float: left;
+    font-size: 14px;
+    word-spacing: 2px;
+    padding: 10px;
+}
+
+.footer-bottom p a {
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.footer-bottom span {
+    opacity: .4;
+    font-weight: 200;
+}
+
+.footer-menu {
+    float: right;
+}
+
+.footer-menu ul {
+    display: flex;
+}
+
+.footer-menu ul li {
+    padding-right: 10px;
+    display: block;
+}
+
+.footer-menu ul li a {
+    color: #cfd2d6;
+    text-decoration: none;
+}
+
+.footer-menu ul li a:hover {
+    color: #27bcda;
+}
+
+.login {
+    width: 104%;
+    height: 36px;
+}
+
+#emaillogin, #passwordlogin{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+
+#loginbutton {
+    background-color: #4789de;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  img.loginimage {
+    width: 16%;
+    border-radius: 50%;
+  }
+
+  #login-content{
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+
+
+@media only screen and (max-width: 479px) {
+    #home-logo img {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        padding-top: 54px;
+        padding-left: 27px;
+        max-width: 60%;
+        /*need to change*/
+        height: auto;
+    }
+
+}
+
+@media only screen and (max-width:667px) {
+    main {
+        display: block;
+        margin: 20px auto;
+        margin-left: 20px;
+    }
+    .flip-card{
+        margin-bottom: 9pc;
+        width: 328px;
+        height: 193px;
+    }
+    .container {
+        width: 93%;
+    }
+    form{
+        width: 97%;
+    }
+}

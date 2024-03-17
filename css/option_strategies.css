@@ -1,0 +1,512 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    background: #bedee7;
+}
+
+header {
+    background-color: #1d9cc8;
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    grid-template-rows: 100%;
+}
+
+#home-logo img {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    padding-top: 20px;
+    padding-left: 40px;
+    max-width: 20%;
+    /*need to change*/
+    height: auto;
+
+}
+
+.flex-container {
+    display: flex;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    /*maybe need to change*/
+    grid-column-start: -1;
+}
+
+.flex-container>div {
+    margin: 10px;
+    padding: 0px;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+.dropbutton {
+    background-color: #164154;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 6px 15px;
+    text-decoration: none;
+    display: block;
+    font-family: monospace;
+    border: 1px solid;
+    font-size: 18px;
+
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #164154;
+}
+
+.login {
+    width: 104%;
+    height: 36px;
+}
+
+ol li {
+    color: #164154;
+}
+
+main {
+    display: grid;
+    margin: 25px;
+    grid-template-columns: 400px 1fr 1fr;
+    grid-template-rows: 350px 170px 209px 600px 1080px 326px 400px 250px 250px;
+    grid-gap: 16px;
+    grid-template-areas:
+        'menu1 menuimg1 menuimg1'
+        'stock1 stock1 imgstock1'
+        'option1 option1 imgoption1'
+        'charOption1 charOption1 charOption1'
+        'callOption1 callOption1 callOption1'
+        'coveredcall1 coveredcall1 coveredimg1'
+        'marriedput1 marriedput1 marriedimg1'
+        'bullcall1 bullcall1 bullcallimg1'
+        'bearput1 bearput1 bearputimg1';
+}
+
+#menu {
+    grid-area: menu1;
+    border: 2px black solid;
+    background: #ffeff2;
+}
+
+legend {
+    font-weight: bolder;
+}
+
+#menu-img {
+    grid-area: menuimg1;
+    display: flex;
+    align-items: end;
+}
+
+.menu-content-img {
+    width: 841px;
+    height: 340px;
+}
+
+#stock {
+    grid-area: stock1;
+}
+
+#img-stock {
+    grid-area: imgstock1;
+}
+
+#option {
+    grid-area: option1;
+}
+
+#image-option {
+    grid-area: imgoption1;
+}
+
+#characterOption {
+    grid-area: charOption1;
+}
+
+#callputOption {
+    grid-area: callOption1;
+}
+
+#coveredcall {
+    grid-area: coveredcall1;
+}
+
+#coveredimg {
+    grid-area: coveredimg1;
+}
+
+#marriedput {
+    grid-area: marriedput1;
+}
+
+#marriedimg {
+    grid-area: marriedimg1;
+}
+
+#bullcall {
+    grid-area: bullcall1;
+}
+
+#bullcallimg {
+    grid-area: bullcallimg1;
+}
+
+#bearput {
+    grid-area: bearput1;
+}
+
+#bearputimg {
+    grid-area: bearputimg1;
+}
+
+#marriedimg,
+#bearputimg,
+#image-option,
+#img-stock,
+#coveredimg,
+#bullcallimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-dimension {
+    width: 350px;
+    height: 170px;
+}
+
+#intro-topic {
+    margin-top: -2px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+h1 {
+    text-align: center;
+    line-height: 50px;
+    font-size: 43px;
+    color: white;
+    margin-left: 20px;
+    padding-top: 1pc;
+}
+
+a {
+    color: darkblue;
+    letter-spacing: 1px;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #088F8F;
+    height: auto;
+    width: 100%;
+    color: #fff;
+    overflow: auto;
+
+
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 0.5rem;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 30px;
+    font-size: 18px;
+    color: #cacdd2;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 1rem 0;
+}
+
+.socials li {
+    margin: 0 10px;
+    size: 3px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #fff;
+    border: 1.1px solid white;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.socials a i {
+    font-size: 1.1rem;
+    width: 20px;
+    transition: color .4s ease;
+}
+
+.socials a:hover i {
+    color: aqua;
+}
+
+.footer-bottom p {
+    float: left;
+    font-size: 14px;
+    word-spacing: 2px;
+    padding: 10px;
+}
+
+.footer-bottom p a {
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.footer-bottom span {
+    opacity: .4;
+    font-weight: 200;
+}
+
+.footer-menu {
+    float: right;
+}
+
+.footer-menu ul {
+    display: flex;
+}
+
+.footer-menu ul li {
+    padding-right: 10px;
+    display: block;
+}
+
+.footer-menu ul li a {
+    color: #cfd2d6;
+    text-decoration: none;
+}
+
+.footer-menu ul li a:hover {
+    color: #27bcda;
+}
+
+
+table {
+    width: 50%;
+    /* table is 50% of the body */
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 10px auto;
+}
+
+th,
+td {
+    border: 3px solid black;
+    padding: 0.2em 0.7em;
+    text-align: center;
+    font-weight: bold;
+}
+
+th:first-child {
+    width: 40%;
+    /* make the column fluid */
+}
+
+th:nth-child(2) {
+    width: 30%;
+    font-size: 1pc;
+    /* make the column fluid */
+}
+
+th:nth-child(3) {
+    width: 30%;
+    /* make the column fluid */
+}
+
+th.left,
+td.left {
+    text-align: left;
+}
+
+thead,
+tfoot {
+    background-color: #fff5ed;
+    height: 20pc;
+}
+
+tfoot {
+    font-weight: bold;
+}
+
+thead>tr>:nth-child(1) {
+    width: 200px;
+    text-align: center;
+    font-size: 21px;
+}
+
+thead>tr>:nth-child(2) {
+    width: 200px;
+    text-align: center;
+    font-size: 21px;
+}
+
+thead>tr>:nth-child(3) {
+    width: 200px;
+    text-align: center;
+    font-size: 21px;
+}
+
+
+/*Media Queries */
+@media only screen and (min-width:375px) and (max-width:667px) {
+    main {
+        display: block;
+        margin: 20px auto;
+        margin-left: 20px;
+        padding-right: 21px;
+    }
+
+    #menu-img {
+        margin-top: inherit;
+    }
+
+    .menu-content-img {
+        width: 332px;
+    }
+
+    #coveredcall {
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (min-width:360px) and (max-width:740px) {
+    main {
+        display: block;
+        margin: 20px auto;
+        margin-left: 20px;
+        padding-right: 21px;
+    }
+
+    .menu-content-img {
+        width: 100%;
+    }
+
+    #menu-img {
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    #home-logo img {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        padding-top: 54px;
+        padding-left: 27px;
+        max-width: 60%;
+        /*need to change*/
+        height: auto;
+    }
+
+    footer {
+        height: 364px;
+    }
+}
+
+@media only screen and (min-width : 390px) and (max-width : 844px) {
+    #menu {
+        width: 87%;
+    }
+
+    .menu-content-img {
+        width: 96%;
+    }
+}
+
+@media only screen and (min-width : 820px) and (max-width:1180px) {
+    main {
+        display: grid;
+        margin: 25px;
+        grid-template-columns: 400px 1fr 1fr;
+        grid-template-rows: 350px 170px 300px 700px 1350px 500px 700px 350px 300px;
+        grid-gap: 16px;
+        grid-template-areas:
+            'menu1 menuimg1 menuimg1'
+            'stock1 stock1 imgstock1'
+            'option1 option1 imgoption1'
+            'charOption1 charOption1 charOption1'
+            'callOption1 callOption1 callOption1'
+            'coveredcall1 coveredcall1 coveredimg1'
+            'marriedput1 marriedput1 marriedimg1'
+            'bullcall1 bullcall1 bullcallimg1'
+            'bearput1 bearput1 bearputimg1';
+    }
+
+}
+
+@media only screen and (min-width : 768px) and (max-width:1024px) {
+    main {
+        display: grid;
+        margin: 25px;
+        grid-template-columns: 400px 1fr 1fr;
+        grid-template-rows: 350px 170px 300px 700px 1350px 500px 700px 350px 300px;
+        grid-gap: 16px;
+        grid-template-areas:
+            'menu1 menuimg1 menuimg1'
+            'stock1 stock1 imgstock1'
+            'option1 option1 imgoption1'
+            'charOption1 charOption1 charOption1'
+            'callOption1 callOption1 callOption1'
+            'coveredcall1 coveredcall1 coveredimg1'
+            'marriedput1 marriedput1 marriedimg1'
+            'bullcall1 bullcall1 bullcallimg1'
+            'bearput1 bearput1 bearputimg1';
+    }
+
+}

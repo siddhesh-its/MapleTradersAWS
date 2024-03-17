@@ -1,0 +1,474 @@
+body{
+    margin: 0;
+    font-family:'Poppins', sans-serif;
+}
+
+/*new changes*/
+.dropbutton {
+    background-color: #164154;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 6px 15px;
+    text-decoration: none;
+    display: block;
+    font-family: monospace;
+    border: 1px solid;
+    font-size: 18px;
+
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #164154;
+}
+
+
+/*header*/
+header{
+    background-color:#1d9cc8;
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    grid-template-rows: 100%;
+}
+
+.login{
+    width: 104%;
+    height: 36px;
+}
+
+#home-logo img{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    padding-top: 20px;
+    padding-left: 40px;
+    max-width: 60%;    
+    height: auto;   
+}
+
+.flex-container {
+    display: flex;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-start;    
+    grid-column-start: -1;
+}
+ 
+ 
+.flex-container > div {
+    margin: 10px;
+    padding: 0px;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+/*main content*/
+main{
+    padding-top: 10em;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 7em;
+}
+
+
+/*Image -Overlay Slide */
+.trade-image {
+    border-radius: 10px;
+    width: 85%;
+    height: 110%;
+    padding-left: 30px;
+}
+
+.imageside {
+    position: relative;
+    height: 255px;
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 15px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background: rgb(0, 0, 0);
+    background:  rgba(0, 0, 0, 0.5);/* Black see-through */
+    color: #f1f1f1; 
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.imageside:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-size: small;
+}
+
+#result{
+    padding-top: 410%;
+    text-align: justify;
+}
+
+/*footer*/
+/*Footer*/
+footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #088F8F;
+    height: auto;
+    width: 100%;
+    color: #fff;
+    overflow: auto;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 0.5rem;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 30px;
+    font-size: 18px;
+    color: #cacdd2;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 1rem 0;
+}
+
+.socials li {
+    margin: 0 10px;
+    size: 3px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #fff;
+    border: 1.1px solid white;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.socials a i {
+    font-size: 1.1rem;
+    width: 20px;
+    transition: color .4s ease;
+}
+
+.socials a:hover i {
+    color: aqua;
+}
+
+.footer-bottom p {
+    float: left;
+    font-size: 14px;
+    word-spacing: 2px;
+    padding: 10px;
+}
+
+.footer-bottom p a {
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.footer-bottom span {
+    opacity: .4;
+    font-weight: 200;
+}
+
+.footer-menu {
+    float: right;
+}
+
+.footer-menu ul {
+    display: flex;
+}
+
+.footer-menu ul li {
+    padding-right: 10px;
+    display: block;
+}
+
+.footer-menu ul li a {
+    color: #cfd2d6;
+    text-decoration: none;
+}
+
+.footer-menu ul li a:hover {
+    color: #27bcda;
+}
+
+
+
+/* media queries */
+@media only screen and (min-width: 760px){  /*ipad*/
+    #home-logo img{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        padding-top: 40px;
+        padding-left: 40px;
+        max-width: 30%;    
+        height: auto;   
+    }
+
+    .flex-container {                   
+        display: flex;
+        margin-top: 20px;
+        flex-wrap: wrap;
+        justify-content: flex-start;    
+        grid-column-start: -1;
+    }
+
+    .book-cover img{
+        border-radius: 10px;
+        width: 25%;
+        height: 25%;
+        float: left;
+        padding-left: 40px;
+    }
+
+    .book{
+        padding-bottom: 2em;
+    }
+
+    #result{
+        padding-top: 80%;
+        text-align: justify;
+    }
+
+}
+
+@media only screen and (min-width: 1000px){              /*desktop*/
+
+    main{
+        padding-top: 10em;
+        padding-left: 3em;
+        padding-right: 3em;
+        padding-bottom: 7em;
+    }
+
+    #home-logo img{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        padding-top: 15px;
+        padding-left: 40px;
+        max-width: 20%;    
+        height: auto;   
+    }
+
+    .flex-container {
+        display: flex;
+        margin-top: 30px;
+        flex-wrap: wrap;
+        justify-content: flex-start;    
+        grid-column-start: -1;
+    }
+
+    .book-cover img{
+        border-radius: 10px;
+        width: 15%;
+        height: 15%;
+        float: left;
+        padding-left: 40px;
+    }
+
+    .book{
+        padding-bottom: 2em;
+    }
+
+    #result{
+        padding-top: 25%;
+        text-align: justify;
+    }
+
+}
+
+@media only screen and (min-width: 1280px){              /*desktop*/
+
+    main{
+        padding-top: 10em;
+        padding-left: 3em;
+        padding-right: 3em;
+        padding-bottom: 7em;
+    }
+
+    #home-logo img{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        padding-top: 15px;
+        padding-left: 40px;
+        max-width: 20%;    
+        height: auto;   
+    }
+
+    .flex-container {
+        display: flex;
+        margin-top: 30px;
+        flex-wrap: wrap;
+        justify-content: flex-start;    
+        grid-column-start: -1;
+    }
+
+    .book-cover img{
+        border-radius: 10px;
+        width: 15%;
+        height: 15%;
+        float: left;
+        padding-left: 40px;
+    }
+
+    .book{
+        padding-bottom: 10em;
+    }
+
+    #result{
+        padding-top: 25%;
+        text-align: justify;
+    }
+
+}
+
+@media only screen and (min-width: 1600px){     /*wide*/
+
+    main{
+        padding-top: 10em;
+        padding-left: 3em;
+        padding-right: 3em;
+        padding-bottom: 7em;
+    }
+
+    #home-logo img{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        padding-top: 15px;
+        padding-left: 40px;
+        max-width: 20%;    
+        height: auto;   
+    }
+
+    .flex-container {
+        display: flex;
+        margin-top: 30px;
+        flex-wrap: wrap;
+        justify-content: flex-start;    
+        grid-column-start: -1;
+    }
+
+    .book-cover img{
+        border-radius: 10px;
+        width: 15%;
+        height: 15%;
+        float: left;
+        padding-left: 40px;
+    }
+
+    .book{
+        padding-bottom: 12em;
+    }
+    #result{
+        padding-top: 25%;
+        text-align: justify;
+    }
+
+}
+
+@media only screen and (min-width: 1750px){         /*ultra wide*/
+
+    main{
+        padding-top: 10em;
+        padding-left: 3em;
+        padding-right: 3em;
+        padding-bottom: 7em;
+    }
+
+    #home-logo img{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        padding-top: 15px;
+        padding-left: 40px;
+        max-width: 20%;    
+        height: auto;   
+    }
+
+    .flex-container {
+        display: flex;
+        margin-top: 30px;
+        flex-wrap: wrap;
+        justify-content: flex-start;    
+        grid-column-start: -1;
+    }
+
+    .book-cover img{
+        border-radius: 10px;
+        width: 15%;
+        height: 15%;
+        float: left;
+        padding-left: 40px;
+    }
+
+    .book{
+        padding-bottom: 20em;
+    }
+
+    #result{
+        padding-top: 25%;
+        text-align: justify;
+    }
+
+}

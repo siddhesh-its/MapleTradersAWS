@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Maple Traders</title>
+        <link rel="icon" href="resources/favicon-32x32.png">
+        <link rel="stylesheet" href="css/summaries.css">    <!-- css style sheet  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">    <!-- google font poppins link  -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="utf-8" >
+        <meta name="description"
+            content="Our recommendations for personal finance books along with summaries">
+        <meta name="keywords" content="finance, investing, books, personal finance">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    <header>    <!--  site header -->
+        <a id = "home-logo" href="home.html"
+        title="Home page"><img src = "resources/dollar.png" alt="Home page"></a> 
+        <div class="flex-container">
+            <!--site navigation-->
+            <div class="dropdown">
+                <button class="dropbutton">Stock</button>
+                <div class="dropdown-content">
+                    <a href="/introduction_to_stock_market.html">Stock Markets</a>
+                    <a href="/technical_analysis.html">Technical Analysis</a>
+                    <a href="/fundamental_analysis.html">Fundamental Analysis</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbutton">Funds</button>
+                <div class="dropdown-content">
+                    <a href="page-6.html">Planning Finances</a>
+                    <a href="page-5.html">Financial Data</a>
+                    <a href="personal-finance.html">Personal Finance</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbutton">Plans</button>
+                <div class="dropdown-content">
+                    <a href="retirement_plan_calculator.html">Retirement Plan</a>
+                    <a href="systematic plan calculator.html">Systematic Plan</a>
+                    <a href="summaries.html">Book Summaries</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbutton">Trade</button>
+                <div class="dropdown-content">
+                    <a href="future_trading.html">Future Trading</a>
+                    <a href="option_strategies.html">Option Strategies</a>
+                    <a href="market_tax.html">Market and Tax</a>
+                </div>
+            </div>
+            <div><a href="login_process.html"><img class=login src="resources/icons8-login-100.png"
+                        alt="Login Page"></a></div>
+            <div><a href="register_process.html"><img class=login src="resources/add-user.png" alt="Sign Up"></a>
+            </div>
+        </div> <!-- page title  -->  
+    </header>
+    <main> <!--main content-->
+                <section class="imageside">
+                    <img class="trade-image" src="resources/book1.png" alt="LET'S GET DOWN TO BUSINESS by JAMES PATTERSON" onclick="book1()">
+                    <div class="overlay">
+                        <div class="text">LET'S GET DOWN TO BUSINESS</div>
+                    </div>
+                </section>   <!-- book cover page along with description -->
+                
+                <section class="imageside">
+                    <img class="trade-image" src="resources/book2.png" alt="UNIVERSAL RULES FOR CAPITALISM by TIMOTHY PERRY" onclick="book2()">
+                    <div class="overlay">
+                        <div class="text">UNIVERSAL RULES FOR CAPITALISM</div>
+                    </div>
+                </section>    <!-- book cover page along with description -->
+                
+                <section class="imageside">
+                    <img class="trade-image" src="resources/book3.png" alt="STAYING IN THE COURSE by MELVIN SIMPSON" onclick="book3()">
+                    <div class="overlay">
+                        <div class="text">STAYING IN THE COURSE</div>
+                    </div>
+                </section>    <!-- book cover page along with description  -->
+                
+                <section class="imageside">
+                    <img class="trade-image" src="resources/book4.png" alt="MONEYFESTO by KELLY LOUIS MILLER" onclick="book4()">
+                    <div class="overlay">
+                        <div class="text">MONEYFESTO</div>
+                    </div>
+                </section>    <!-- book cover page along with description  -->
+                
+                <section class="imageside">
+                    <img class="trade-image" src="resources/book5.png" alt="Let's get down to business" onclick="book5()">
+                    <div class="overlay">
+                        <div class="text">LET'S GET DOWN TO BUSINESS</div>
+                    </div>
+                </section>    <!-- book cover page along with description  -->
+                
+                <br>
+                <div id="result"></div>
+    </main>
+    <footer>
+        <!--Footer-->
+        <div class="footer-content">
+
+            <h3>Maple Traders</h3>
+            <p>We ate Maple traders help you with all your investing needs. <br>
+                Start your investing journey with mutual funds or start investing in the stock market.<br>
+                Get in touch today!</p>
+
+            <ul class="socials">
+                <!--Adding Ajax Fonts-->
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="footer-bottom">
+            <p>copyright &copy;2022 <a href="#">Maple Traders</a></p>
+
+        </div>
+
+        <div class="footer-menu">
+            <ul class="f-menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">Mutual Funds</a></li>
+                <li><a href="">Stock Market</a></li>
+                <li><a href="">Retirement Plan Calculator</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="javascript/summaries.js"></script><!--main script-->
+    </body>
+</html>

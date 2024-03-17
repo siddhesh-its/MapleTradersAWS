@@ -1,0 +1,498 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: #1d9cc8;
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    grid-template-rows: 100%;
+}
+
+#home-logo img {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    padding-top: 20px;
+    padding-left: 40px;
+    max-width: 20%;
+    height: auto;
+
+}
+
+.flex-container {
+    display: flex;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    grid-column-start: -1;
+}
+
+.flex-container>div {
+    margin: 10px;
+    padding: 0px;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+.dropbutton {
+    background-color: #164154;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 6px 15px;
+    text-decoration: none;
+    display: block;
+    font-family: monospace;
+    border: 1px solid;
+    font-size: 18px;
+
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #164154;
+}
+
+main{
+    padding-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  
+
+}
+
+.login{
+    width: 104%;
+    height: 36px;
+}
+
+.section-one-footer{
+    float:left;
+    width :40%;
+}
+
+.section-two-footer{
+    float :left;
+    width: 20%;
+    line-height: 30px;
+}
+
+.section-three-footer{
+    float : left;
+    width: 15%;
+    line-height: 30px;
+}
+.section-four-footer{
+    float : right;
+    width: 20%;
+    line-height: 30px;
+}
+.intro-footer{
+    float:left;
+}
+.links-footer{
+    float: right;
+    margin-top: 20px;
+}
+.a-one-footer{
+    margin: 10px;
+    color:white;
+}
+.a-two-footer{
+    margin : 10px;
+    color:white;
+}
+.a-three-footer{
+    margin : 10px;
+    color:white;
+}
+.social-footer{
+    width : 12%;
+    margin-left: 10px;  
+}
+
+footer section a {
+    color:white;
+}
+#fold1 img {
+    padding: 20px;
+    width: 79%;
+}
+
+#fold-1-content{
+    height: 308px;
+}
+
+#fold1 p {
+    font-size: larger;
+} 
+
+#fold2 {
+    padding-bottom: 100px;
+}
+
+#fold2 img {
+    padding: 20px;
+    width: 90%;
+
+}
+
+#fold2 p,ul {
+    font-size: 19px;
+
+}
+
+table {
+    margin:auto;
+    border: 5px solid lightblue;
+}
+
+figcaption {
+    font-size: larger;
+    padding-bottom: 30px;
+}
+
+td {
+    padding: 60px;
+    text-align: center;
+}
+
+table tr:nth-child(odd) {
+    background: lightblue;
+}
+
+aside{
+    padding-left: 45px;
+}
+#main-heading{
+    font-family:Arial, Helvetica, sans-serif;
+    padding-left: 67px;
+}
+#fold-1-h1{
+    padding: 20px; 
+    font-size: 24px;
+}
+#fold-1-p{
+    font-size: 15px;
+}
+#fold-2-h2{
+    padding-left:20px; 
+    font-size: 20px;
+}
+#fold-2-p{
+    padding-left: 20px;
+    font-size: 14px;
+}
+figure{
+    padding-bottom: 30px;
+}
+figcaption{
+    text-align: center;
+}
+
+#faqs {
+    border: 3px black solid;
+    padding: 15px 25px;
+}
+
+.question {
+    font-size: 120%;
+    padding: 0.25em 0 0.25em 25px;
+    cursor: pointer;
+    background: url(../resources/plus.png) no-repeat left center;
+  }
+.question.minus {
+    background: url(../resources/minus.png) no-repeat left center;
+  }
+
+.answer {
+    display: none;
+  }
+.answer.open {
+    display: block;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
+  a:focus,
+  a:hover {
+    color: blue;
+  }
+  
+footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #088F8F;
+    height: auto;
+    width: 100%;
+    color: #fff;
+    overflow: auto;
+
+
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 0.5rem;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 30px;
+    font-size: 18px;
+    color: #cacdd2;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 1rem 0;
+}
+
+.socials li {
+    margin: 0 10px;
+    size: 3px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #fff;
+    border: 1.1px solid white;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.socials a i {
+    font-size: 1.1rem;
+    width: 20px;
+    transition: color .4s ease;
+}
+
+.socials a:hover i {
+    color: aqua;
+}
+
+.footer-bottom p {
+    float: left;
+    font-size: 14px;
+    word-spacing: 2px;
+    padding: 10px;
+}
+
+.footer-bottom p a {
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.footer-bottom span {
+    opacity: .4;
+    font-weight: 200;
+}
+
+.footer-menu {
+    float: right;
+}
+
+.footer-menu ul {
+    display: flex;
+}
+
+.footer-menu ul li {
+    padding-right: 10px;
+    display: block;
+}
+
+.footer-menu ul li a {
+    color: #cfd2d6;
+    text-decoration: none;
+}
+
+.footer-menu ul li a:hover {
+    color: #27bcda;
+}
+
+@media only screen and (max-width : 667px){
+    body{
+        width:102%;
+    }
+    #fold1 img {
+        width: 64%;
+    }
+    
+    aside {
+        padding-left: 0px;
+        width:352px;
+    }
+    #fold-1-content{
+        width: 370px;
+        height: 338px;
+        padding: 12px;
+    }
+    #fold2 img{
+        width: 64%;
+    }
+    td {
+        padding: 0px;
+        text-align: center;
+    }
+    footer{
+        height: 487px;
+    }
+    #main-heading {
+        font-family: Arial, Helvetica, sans-serif;
+        padding:40px;
+    }
+
+}
+
+@media only screen and (max-width: 479px){
+    #home-logo img{
+
+        grid-column-start: 1;
+        grid-column-end: 1;
+        padding-top: 65px;
+        padding-left: 27px;
+        max-width: 60%;    /*need to change*/
+        height: auto;  
+    
+    }
+
+    
+}
+
+.lessons-index {
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+}
+
+.module {
+    padding: 20px;
+    height: 700px;
+    margin: 20px;
+    border: solid blue 2px;
+    background-color: aliceblue;
+}
+
+.module img {
+    height: 45%;
+    width: 100%;
+}
+
+.module p {
+    font-size: large;
+}
+
+.module input {
+    font-size: larger;
+}
+
+
+#content {
+    background-color: lightblue;
+}
+
+.module:hover {
+    box-shadow: 5px 5px 5px 5px blue;
+}
+
+form {
+    padding: 20px;
+}
+
+fieldset {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: 0.5em;
+}
+
+label, input, select {
+    font-size: 100%;
+    
+}
+
+label {
+    text-align: right;
+    display: inline-block;
+    width: 150px;
+    margin: auto;
+    
+
+}
+
+.types-of-mutualfunds {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.mutual-fund {
+    padding: 20px;
+    border: solid blue 2px;
+    background-color: aliceblue;
+    margin: 20px;
+}
+
+.types-of-mutualfunds table {
+    width: 90%;
+}
+
+.types-of-mutualfunds td, th{
+
+    padding: 20px;
+    text-align: left;
+
+}
+
+.mutual-fund input {
+    margin-top: 10px;
+}
+
+button {
+    margin-left: 20px;
+}
+
+#container h2 {
+    margin-left: 30px;
+}

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Mutual Fund Investment</title>
+        <link rel="icon" href="resources/favicon-32x32.png">
+        <link rel="stylesheet" href="css/mutual-funds.css">    <!-- css style sheet  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">    <!-- google font poppins link  -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="utf-8" >
+        <meta name="description"
+            content="Our recommendations for personal finance books along with summaries">
+        <meta name="keywords" content="finance, investing, books, personal finance">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <!--  site header -->
+            <a id="home-logo" href="home.html" title="Home page"><img src="resources/dollar.png" alt="Home page"></a>
+            <!-- referencing home /site landing page  -->
+            <div class="flex-container">
+                <!--site navigation-->
+                <div class="dropdown">
+                    <button class="dropbutton">Stock</button>
+                    <div class="dropdown-content">
+                        <a href="/introduction_to_stock_market.html">Stock Markets</a>
+                        <a href="/technical_analysis.html">Technical Analysis</a>
+                        <a href="/fundamental_analysis.html">Fundamental Analysis</a>
+                    </div>
+                </div>
+    
+                <div class="dropdown">
+                    <button class="dropbutton">Funds</button>
+                    <div class="dropdown-content">
+                        <a href="mutual-funds.html">Mutual Funds</a>
+                        <a href="finance-modules.html">Financial Planning Modules</a>
+                        <a href="personal-finance.html">Personal Finance</a>
+                    </div>
+                </div>
+    
+                <div class="dropdown">
+                    <button class="dropbutton">Plans</button>
+                    <div class="dropdown-content">
+                        <a href="retirement_plan_calculator.html">Retirement Plan</a>
+                        <a href="systematic plan calculator.html">Systematic Plan</a>
+                        <a href="summaries.html">Book Summaries</a>
+                    </div>
+                </div>
+    
+                <div class="dropdown">
+                    <button class="dropbutton">Trade</button>
+                    <div class="dropdown-content">
+                        <a href="future_trading.html">Future Trading</a>
+                        <a href="option_strategies.html">Option Strategies</a>
+                        <a href="market_tax.html">Market and Tax</a>
+                    </div>
+                </div>
+                <div><a href="login_process.html"><img class=login src="resources/icons8-login-100.png"
+                            alt="Login Page"></a></div>
+                <div><a href="register_process.html"><img class=login src="resources/add-user.png" alt="Sign Up"></a>
+                </div>
+            </div> <!-- page title  -->
+        </header>
+
+    <section id="content">
+        <!--Creating parent and child divs to be displayed as grid with 2 columns-->
+        <div class="types-of-mutualfunds">
+            <div class="mutual-fund">
+                <!--The first type of mutual fund covered is Stock Fund-->
+                <h3>Stock Funds</h3>
+                <p style="line-height: 2;">These funds invest directly in equity or stocks. They are categorised as per the size of the company they invest in <strong>- small-, mid-, or large-cap</strong>. Large-cap companies have a high market capitalization with over $10 billion. These companies are also known as blue-chip firms. Small-cap companies have a market cap ranging from $250 million to $2 billion. Mid-cap companies have market cap between the small-cap and the large-cap companies.</p>
+            </div>
+            <div class="mutual-fund">
+                <h3>Recommendations</h3>
+                <!--Creating a table to display the different mutual funds-->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Fund name</th>
+                            <th>5Y AAR</th>
+                            <th>Expense Ratio</th>
+                            <th>TTM Yield</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>American Funds Washington Mutual F1</td>
+                            <td>9.45%</td>
+                            <td>0.63%</td>
+                            <td>1.50%</td>
+                        </tr>
+                        <tr>
+                            <td>Thrivent Mid Cap Stock Fund</td>
+                            <td>9.09%</td>
+                            <td>0.74%</td>
+                            <td>0.1%</td>
+                        </tr>
+                        <tr>
+                            <td>Invesco Small Cap Value Fund</td>
+                            <td>10.4%</td>
+                            <td>1.12%</td>
+                            <td>0.03%</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <input type="submit" value="Invest Now!">
+            </div>
+            <div class="mutual-fund">
+                <!--The second type of mutual fund covered is Index Funds-->
+                <h3>Index Funds</h3>
+                <p style="line-height: 2;">Index funds are a type of mutual fund with a portfolio that tracks a major stock market index like S&P 500. They basically mimic the performance of a financial market index. They are passive funds, meaning, that they don't have any managers making decisions about the portfolio. This in turn translates to very low fees.</p>
+            </div>
+            <div class="mutual-fund">
+                <h3>Recommendations</h3>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Fund name</th>
+                            <th>5Y Trailing Return</th>
+                            <th>10Y Trailing Return</th>
+                            <th>Expense Ratio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Schwab Total Stock Market Index</td>
+                            <td>9.69%</td>
+                            <td>12.3%</td>
+                            <td>0.03%</td>
+                        </tr>
+                        <tr>
+                            <td>Vanguard Total Stock Market Index Fund</td>
+                            <td>9.79%</td>
+                            <td>12.4%</td>
+                            <td>0.04%</td>
+                        </tr>
+                        <tr>
+                            <td>Fidelity Total Market Index Fund</td>
+                            <td>9.73%</td>
+                            <td>12.4%</td>
+                            <td>0.015%</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <input type="submit" value="Invest Now!">
+            </div>
+            <div class="mutual-fund">
+                <!--The third type of mutual funds covered is Balanced Funds-->
+                <h3>Balanced Funds</h3>
+                <p style="line-height: 2;">Balanced funds are a hybrid of asset classes. These can be stocks, bonds, money market instruments, and so on. The purpose of this fund is to reduce the risk of exposure across the different asset classes. Some funds have a fixed allocation strategy, meaning, that the investor has a predictable exposure to the different asset classes. Other funds allocate their funds dynamically as per the market conditions, or the investor's goals.</p>
+            </div>
+            <div class="mutual-fund">
+                <h3>Recommendations</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Fund name</th>
+                            <th>3Y AAR</th>
+                            <th>5Y AAR</th>
+                            <th>10Y AAR</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Fidelity Balanced Income Private portfolio</td>
+                            <td>1.4%</td>
+                            <td>3.0%</td>
+                            <td>4.9%</td>
+                        </tr>
+                        <tr>
+                            <td>Fidelity Balanced Portfolio</td>
+                            <td>3.5%</td>
+                            <td>4.8%</td>
+                            <td>6.7%</td>
+                        </tr>
+                        <tr>
+                            <td>Fidelity Canadian Balanced Fund</td>
+                            <td>4.0%</td>
+                            <td>5.2%</td>
+                            <td>6.7%</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <input type="submit" value="Invest Now!">
+            </div>  
+        </div>
+        
+        <!--Creating a calculator to find the future value of the user's investments-->
+        <div id="container">
+            <h1 style="margin-left: 20px;">Investment Calculator</h1>
+            <div id="calculator">
+              <!-- Form-->
+                <form>
+                    <p>How much are you investing?</p>
+                    <input id="amount" type="text" placeholder="Investment Amount">$
+                    <p>How many years will you be investing?</p>
+                    <select id="year">   
+                        <option disabled selected value="0">How many years?</option>
+                        <option value="1">1 year</option>
+                        <option value="2">2 years</option>
+                        <option value="3">2 years</option>
+                        <option value="4">4 years</option>
+                        <option value="5">5 years</option>
+                        <option value="6">6 years</option>
+                        <option value="7">7 years</option>
+                        <option value="8">8 years</option>
+                        <option value="9">9 years</option>
+                        <option value="10">10 years</option>
+                    </select>
+                </form>
+                <p style="margin-left: 20px;">What is the interest rate?</p>
+                <input id="rate" type="text" placeholder="Interest rate" style="margin-left: 20px;">%
+                <br>
+                <br>
+                <button type="button" id="calculate">Calculate!</button>
+            </div>
+            <br>
+            <div id="interest">
+                <span id="future" style="margin-left: 20px;">0.00</span>$
+                <small id="futureAmount" style="margin-left: 20px;">Future Value</small>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+        <div class="footer-content">
+
+            <h3>Maple Traders</h3>
+            <p>We are Maple traders help you with all your investing needs. <br>
+                Start your investing journey with mutual funds or start investing in the stock market.<br>
+                Get in touch today!</p>
+
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="footer-bottom">
+            <p>copyright &copy;2022 <a href="#">Maple Traders</a></p>
+
+        </div>
+
+        <div class="footer-menu">
+            <ul class="f-menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">Mutual Funds</a></li>
+                <li><a href="">Stock Market</a></li>
+                <li><a href="">Retirement Plan Calculator</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="javascript/mutual-funds.js"></script>
+    </body>
+</html>

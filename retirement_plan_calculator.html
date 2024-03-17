@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Maple Retirement Calculator</title>
+        <link rel="icon" href="resources/favicon-32x32.png">
+        <link rel="stylesheet" href="css/retirement_plan_calculator.css">    <!-- css style sheet  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">    <!-- google font poppins link  -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="utf-8" >
+        <meta name="description"
+            content="Our recommendations for personal finance books along with summaries">
+        <meta name="keywords" content="finance, investing, books, personal finance">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    <header>    <!--  site header -->
+        <a id = "home-logo" href="home.html"
+        title="Home page"><img src = "resources/dollar.png" alt="Home page"></a> 
+        <div class="flex-container">
+            <!--site navigation-->
+            <div class="dropdown">
+                <button class="dropbutton">Stock</button>
+                <div class="dropdown-content">
+                    <a href="/introduction_to_stock_market.html">Stock Markets</a>
+                    <a href="/technical_analysis.html">Technical Analysis</a>
+                    <a href="/fundamental_analysis.html">Fundamental Analysis</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbutton">Funds</button>
+                <div class="dropdown-content">
+                    <a href="page-6.html">Planning Finances</a>
+                    <a href="page-5.html">Financial Data</a>
+                    <a href="personal-finance.html">Personal Finance</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbutton">Plans</button>
+                <div class="dropdown-content">
+                    <a href="retirement_plan_calculator.html">Retirement Plan</a>
+                    <a href="systematic plan calculator.html">Systematic Plan</a>
+                    <a href="summaries.html">Book Summaries</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbutton">Trade</button>
+                <div class="dropdown-content">
+                    <a href="future_trading.html">Future Trading</a>
+                    <a href="option_strategies.html">Option Strategies</a>
+                    <a href="market_tax.html">Market and Tax</a>
+                </div>
+            </div>
+            <div><a href="login_process.html"><img class=login src="resources/icons8-login-100.png"
+                        alt="Login Page"></a></div>
+            <div><a href="register_process.html"><img class=login src="resources/add-user.png" alt="Sign Up"></a>
+            </div>
+        </div> <!-- page title  -->
+    </header>
+    <main> <!--main content-->
+        <section>
+            <h2>Retirement Calculator</h2>
+            <div class="justi">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You can get information about retirement income from the Maple Traders Retirement Calculator. 
+                This covers retirement benefits from the Old Age Security (OAS) pension and the Canada Pension Plan 
+                (CPP). You must complete a number of modules in order to estimate your retirement incomes from various 
+                sources. Then you must compare them to your desired revenue. You can also observe the results of 
+                your adjustments to your saving habits.</div><br>
+        </section> 
+        <section id="grid">
+            <form>
+                <fieldset>
+                    <legend>Calculate</legend>
+                    <div class="form">E-Mail: <input type="email" name="email" id="email"></div>
+                    <div class="form">I am <input type="number" name="age" id="age" value="30"> years old.</div>
+                    <div class="form">I plan to retire when I am <input type="number" name="ret" id="ret" value="60"> years old.
+                        <div class="comment">Life expectancy is 82.3 years in Canada on average.</div>
+                    </div>
+                    
+                    <div class="form">I identify as 
+                        <select name="gender" id="gender">
+                            <option value="m" selected>Male</option>
+                            <option value="f">Female</option>
+                            <option value="o">Others</option>
+                        </select>
+                    </div>
+                    <div class="form">What is your current monthly income from all sources (after tax)? &dollar;
+                        <input type="number" name="inc" id="inc">
+                        <div class="comment">You'll probably need to save at least 15% of your income for retirement.</div> 
+                    </div>
+                    <div class="form">When I'm retired, I expect to spend &dollar;<input type="number" name="retinc" id="retinc" value="2000"> monthly.
+                        <div class="comment">The majority of recent Canadian retirees with an income of &dollar;39,000 at age 31 received an annual 
+                            retirement income of between &dollar;21,000 and &dollar;35,000 at age 70.
+                        </div> 
+                    </div>
+                    <div class="form"><input type="button" name="sub" value="Submit" id="sub" onclick="subfun()"><!-- submit button for process.html  -->
+                    <input type="reset" name="resetform" value="Reset" id="reset"></div>
+                </fieldset>
+            </form>
+            <section id="text">
+                <h3>How does our retirement savings calculator work?</h3>
+                <div class="justi">Our retirement savings calculator will give you an estimate of how much you need to retire and how much you
+                 have saved already. The calculator takes into account your registered and non-registered savings, annual 
+                 returns, investment fees, income tax, and inflation to compute these estimates. Here are some market assumptions 
+                 baked into our calculations.
+                </div>
+                <div>
+                    <ul>
+                        <li>Inflation rate of 2%.</li>
+                        <li>Yearly salary increase of 2% per year up to the age of 45 and none thereafter.</li>
+                        <li>Rate of return in retirement net of fees 2.77%.</li>
+                        <li>Ongoing monthly contributions will max out registered accounts first. Excess contributions will be treated as taxable investments.</li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+        <section>
+            <p id="result"></p>
+            <h3>What questions does the retirement calculator help answer?</h3>
+            <div>Our retirement savings calculator can help you answer all the questions that make your head spin, like:</div>
+            <div>
+                <ul>
+                    <li>How much do I need to retire in Canada?</li>
+                    <li>How much should I have saved for retirement?</li>
+                    <li>How much will I have when I retire?</li>
+                    <li>Am I saving enough for retirement?</li>
+                    <li>How much can I spend in retirement?</li>
+                </ul>
+            </div>
+            <mark>#Maple Tips</mark>
+            <div class="justi">Begin saving for retirement as early as you can and take advantage of the power of compounding. Create a budget 
+                that includes retirement savings, learn how investing works, discover smart retirement strategies and understand 
+                what it takes to retire early.</div>
+            
+        </section>       
+    </main>
+    <br>
+    <br>
+    <footer>    
+        <div class="footer-content">
+
+            <h3>Maple Traders</h3>
+            <p>We ate Maple traders help you with all your investing needs. <br>
+                Start your investing journey with mutual funds or start investing in the stock market.<br>
+                Get in touch today!</p>
+
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="footer-bottom">
+            <p>copyright &copy;2022 <a href="#">Maple Traders</a></p>
+
+        </div>
+
+        <div class="footer-menu">
+            <ul class="f-menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">Mutual Funds</a></li>
+                <li><a href="">Stock Market</a></li>
+                <li><a href="">Retirement Plan Calculator</a></li>
+            </ul>
+        </div>
+        <!-- site footer  -->
+    </footer>
+    <script src="javascript/retirement_plan_calculator.js"></script><!--main script-->
+    </body>
+</html>

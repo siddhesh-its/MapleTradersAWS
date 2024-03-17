@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Maple Traders</title>
+    <link rel="icon" href="resources/favicon-32x32.png">
+    <link rel="stylesheet" href="css/option_strategies.css"> <!-- css style sheet  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- google font poppins link  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="description" content="Our recommendations for personal finance books along with summaries">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="keywords" content="finance, investing, books, personal finance">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <!--  site header -->
+        <a id="home-logo" href="index.html" title="Home page"><img src="resources/dollar.png" alt="Home page"></a>
+        <!-- referencing home /site landing page  -->
+        <div class="flex-container">
+            <!--site navigation-->
+            <div class="dropdown">
+                <button class="dropbutton">Stock</button>
+                <div class="dropdown-content">
+                    <a href="/introduction_to_stock_market.html">Stock Markets</a>
+                    <a href="/technical_analysis.html">Technical Analysis</a>
+                    <a href="/fundamental_analysis.html">Fundamental Analysis</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbutton">Funds</button>
+                <div class="dropdown-content">
+                    <a href="page-6.html">Planning Finances</a>
+                    <a href="page-5.html">Financial Data</a>
+                    <a href="personal-finance.html">Personal Finance</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbutton">Plans</button>
+                <div class="dropdown-content">
+                    <a href="retirement_plan_calculator.html">Retirement Plan</a>
+                    <a href="systematic plan calculator.html">Systematic Plan</a>
+                    <a href="summaries.html">Book Summaries</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbutton">Trade</button>
+                <div class="dropdown-content">
+                    <a href="future_trading.html">Future Trading</a>
+                    <a href="option_strategies.html">Option Strategies</a>
+                    <a href="market_tax.html">Market and Tax</a>
+                </div>
+            </div>
+            <div><a href="login_process.html"><img class=login src="resources/icons8-login-100.png"
+                        alt="Login Page"></a></div>
+            <div><a href="register_process.html"><img class=login src="resources/add-user.png" alt="Sign Up"></a>
+            </div>
+        </div> <!-- page title  -->
+    </header>
+    <main>
+        <fieldset id="menu">
+            <!--From This FieldSet You Can Go Directly Go Topic -->
+            <legend>Topics Covered</legend>
+            <ol id="intro-topic">
+                <li><a href="#stock">Stock or Shares</a></li>
+                <li><a href="#option">What is an Option?</a></li>
+                <li><a href="#characterOption">Charcterstics Of Options</a></li>
+                <li><a href="#callputOption">Kinds of Options</a>
+                    <ol type="A">
+                        <li><a href="#call-option">Calls Options</a></li>
+                        <li><a href="#put-option">Puts Options</a></li>
+                        <li><a href="#option-table">Call Put Table</a></li>
+                    </ol>
+                </li>
+                <li><a href="#coveredcall">Options Strategies</a>
+                    <ol>
+                        <li><a href="#coveredcall">Covered Call</a></li>
+                        <li><a href="#marriedput">Married Put</a></li>
+                        <li><a href="#bullcall">Bull Call Spread</a></li>
+                        <li><a href="#bearput">Bear Put Spread</a></li>
+                    </ol>
+                </li>
+            </ol>
+
+        </fieldset>
+        <section id="menu-img"><!-- Automatic SlideShow Option-->
+            <img class="menu-content-img" src="resources/options-trading.jpg" alt="Stock Image" id="slideshow">
+        </section>
+        <!--Content -->
+        <section id="stock">
+            <h3>What is stock or shares?</h3>
+            <p>Stock or shares means we are actually buying a piece of company.
+                For example-If a company only had 100 shares of stock and we bought one share of that
+                company we would literally own 1 percent of that company.
+            </p>
+        </section>
+        <section id="img-stock">
+            <img src="resources/stock.PNG" alt="Stock Image" class="image-dimension">
+        </section>
+        <section id="option">
+            <h3>What is an Option?</h3>
+            <p>An Option is just a contract between two parties.There is a buyer for an option as well
+                there's a seller of an option.We can be a buyer or a seller.We can take either of the side.
+                It means one person is betting when the stock price is going up and one person when they make this
+                contract betting the stock price is going down.In Options, there are something called a leveraged
+                product.
+            </p>
+        </section>
+        <section id="image-option">
+            <img src="resources/Option.png" alt="Option Image" class="image-dimension">
+        </section>
+        <section id="characterOption">
+            <h3>Charcterstics Of Options</h3>
+            <h4>1) 1 Option = "Equals" 100 shares of stock.</h4>
+            <p>For example - If we use priceline as our stock.Then the last price on which priceline traded
+                is at $1174.17 cents.We are buying one share of priceline stock and that will cost us
+                $1174.17 cents. In this case, the price would be $117417.00 ($1174.17 * 100 = $117417.00).
+                One Option actually controls this much priceline stock.
+            </p>
+            <h4>2) Expire on the 3rd Friday Of Month</h4>
+            <p>Option expires on 3rd Friday of Month in which your option is in and includes standard
+                expiration cycles.There are different expiration cycles like weekly cycle ('w'),
+                quaterly cycle ('Q').
+            </p>
+            <h4>3) Multiple Timeframes</h4>
+            <p>There are multi timeframes for options. then we can buy stock its one time frame, it never
+                expires.We buy a stock and we own it for as long as we want to own it.Options have expiration
+                as there are multiple time frames as in months and not every month has to be there.
+            </p>
+            <h4>4) Option = Multiple "Strike Prices"</h4>
+            <p>There are multiple strike prices inside each month's option what they call chain.</p>
+            <h4>5) Bid - Ask Spread</h4>
+            <p>Bid means sell it now price as well as the low price.Ask is buy it now price and the high price
+                We always want to buy or sell it at the mid-price which is the most fair price.Further, we have
+                to choose an up or down direction options that have directional component.
+            </p>
+        </section>
+        <section id="callputOption">
+            <h3>Kinds of Options</h3>
+            <p>There are only two kinds of Options-</p>
+            <section>
+                <h4 id="call-option">A) Calls Options</h4>
+                <ol>
+                    <li>A call option gives the holder the right, but not the obligation, to buy
+                        the underlying security at the strike price on or before expiration.
+                    </li>
+                    <li>A long call can be used to speculate on the price of the underlying rising, since it has
+                        unlimited upside potential but
+                        the maximum loss is the premium (price) paid for the option.</li>
+                    <li>We buy calls if stock is going up.</li>
+                    <li>We sell calls if stock is going down.</li>
+                    <li>Call Option Example-
+                        A potential homeowner sees a new development going up. That person may want the right
+                        to purchase a home in the future but will only want to exercise that right after
+                        certain developments around the area are built.The potential homebuyer buy a call
+                        option from the developer to buy the home at say $400,000 at any point in the next
+                        three years.The potential homebuyer needs to contribute a down payment to lock in that
+                        right.
+                        This cost is known as the premium.The deposit might be $20,000 that the buyer pays the
+                        developer.
+                        Let's say two years have passed, and now the developments are built and zoning has been
+                        approved.
+                        The homebuyer exercises the option and buys the home for $400,000 because that is the
+                        contract purchased.
+                        Now, in an alternate scenario, say the zoning approval doesn't come through until
+                        year four. This is one year past the expiration of this option. Now the homebuyer must
+                        pay the market price because the contract has expired. In either case, the developer
+                        keeps the original $20,000 collected.
+                    </li>
+                </ol>
+            </section>
+            <section>
+                <h4 id="put-option">B) Puts Options</h4>
+                <ol>
+                    <li>
+                        A put gives the holder the right, but not the obligation, to sell the
+                        underlying stock at the strike price on or before expiration.
+                    </li>
+                    <li>
+                        When the underlying price falls,the put gains value as long put is a short
+                        position in the underlying security.This can be purchased as a sort of insurance etc.
+                    </li>
+                    <li>A buyer of put believes the stock price is going down which means the seller of
+                        the put must mean the stock price is going up.
+                    </li>
+                    <li>Put Option Example-an investor wants insurance on their S&P 500 index portfolio,
+                        they can purchase put options. An investor may fear that a bear market is near
+                        and may be unwilling to lose more than 10% of their long position in the S&P 500
+                        index. If the S&P 500 is currently trading at $2,500, they can purchase a put
+                        option giving them the right to sell the index at $2,250, for example, at any
+                        point in the next two years.If in six months the market crashes by 20% (500
+                        points on the index), they have made 250 points by being able to sell the
+                        index at $2,250 when it is trading at $2,000—a combined loss of just 10%.
+                        In fact, even if the market drops to zero, the loss would only be 10% if
+                        this put option is held.
+                    </li>
+                </ol>
+            </section>
+            <section id="option-table"> <!--table populated through javascript-->
+                <table>
+                </table>
+            </section>
+        </section>
+        <section id="coveredcall">
+            <h3>Options Strategies</h3>
+            <h4>1) Covered Call</h4>
+            <p>With calls, there is a simple strategy to buy a call in which investor sells call options
+                on the open market without owning the underlying secuity.This is famous strategy as it
+                generates imcome and reduces some risk of being long on the stock alone.The trade-off must
+                be selling your shares at a set price- the short strike price.
+            </p>
+            <p>For example -Investors may choose to use this strategy when they have a short-term position
+                in the stock and a neutral opinion on its direction. They might be looking to generate
+                income through the sale of the call premium or protect against a potential decline
+                in the underlying stock's value.
+            </p>
+        </section>
+        <section id="coveredimg">
+            <img src="resources/Covered_Call.PNG" alt="Covered Call" class="image-dimension">
+        </section>
+        <section id="marriedput">
+            <h4>2) Married Put</h4>
+            <p>In this kind of strategy, an investor purchases an asset includes shares of stock and
+                further purchases put options for an equivalent number of shares.The holder of a put
+                option has the right to sell stock at the strike price and each contract is worth 100
+                shares.
+            </p>
+            <p>An investor may choose to use this strategy as a way of protecting their downside
+                risk when holding a stock. This strategy functions similarly to an insurance
+                policy; it establishes a price floor in the event the stock's price falls sharply.
+                This is why it's also known as a protective put.
+            </p>
+            <p>For example -Suppose an investor buys 100 shares of stock and buys one put option
+                simultaneously. This strategy may be appealing for this investor because they are
+                protected to the downside, in the event that a negative change in the stock price
+                occurs. At the same time, the investor would be able to participate in every upside
+                opportunity if the stock gains in value. The only disadvantage of this strategy is
+                that if the stock does not fall in value, the investor loses the amount of the
+                premium paid for the put option.
+            </p>
+        </section>
+        <section id="marriedimg">
+            <img src="resources/MarriedPut.PNG" alt="Married Put" class="image-dimension">
+        </section>
+        <section id="bullcall">
+            <h4>3) Bull Call Spread</h4>
+            <p>In this kind of strategy,an investor buys calls at a specific strike price as well as
+                also setting the same number of calls at a higher strike price.Both call options
+                will have the same expiration date and underlying asset.
+            </p>
+            <p>
+                This type of vertical spread strategy is often used when an investor is bullish
+                on the underlying asset and expects a moderate rise in the price of the asset.
+                Using this strategy, the investor is able to limit their upside on the trade
+                while also reducing the net premium spent
+            </p>
+        </section>
+        <section id="bullcallimg">
+            <img src="resources/BullCall.PNG" alt="Bull Call" class="image-dimension">
+        </section>
+        <section id="bearput">
+            <h4>4) Bear Put Spread</h4>
+            <p> In this strategy, the investor simultaneously purchases put options at a specific
+                strike price and also sells the same number of puts at a lower strike price.
+                Both options are purchased for the same underlying asset and have the same
+                expiration date.This strategy is used when the trader has a bearish sentiment
+                about the underlying asset and expects the asset's price to decline.
+                The strategy offers both limited losses and limited gains.
+            </p>
+        </section>
+        <section id="bearputimg">
+            <img src="resources/BearPut.PNG" alt="Bear Put" class="image-dimension">
+        </section>
+
+
+
+    </main>
+    <footer>
+        <!--Footer-->
+        <div class="footer-content">
+
+            <h3>Maple Traders</h3>
+            <p>We ate Maple traders help you with all your investing needs. <br>
+                Start your investing journey with mutual funds or start investing in the stock market.<br>
+                Get in touch today!</p>
+
+            <ul class="socials">
+                <!--Adding Ajax Fonts-->
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="footer-bottom">
+            <p>copyright &copy;2022 <a href="#">Maple Traders</a></p>
+
+        </div>
+
+        <div class="footer-menu">
+            <ul class="f-menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">Mutual Funds</a></li>
+                <li><a href="">Stock Market</a></li>
+                <li><a href="">Retirement Plan Calculator</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!--javascript-->
+    <script src="javascript/option_strategies.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Maple SIP Calculator</title>
+        <link rel="icon" href="resources/favicon-32x32.png">
+        <link rel="stylesheet" href="css/systematic plan calculator.css">    <!-- css style sheet  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">    <!-- google font poppins link  -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="utf-8" >
+        <meta name="description"
+            content="Our recommendations for personal finance books along with summaries">
+        <meta name="keywords" content="finance, investing, books, personal finance">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    <header>    <!--  site header -->
+        <a id = "home-logo" href="home.html"
+        title="Home page"><img src = "resources/dollar.png" alt="Home page"></a> 
+        <div class="flex-container">
+            <!--site navigation-->
+            <div class="dropdown">
+                <button class="dropbutton">Stock</button>
+                <div class="dropdown-content">
+                    <a href="/introduction_to_stock_market.html">Stock Markets</a>
+                    <a href="/technical_analysis.html">Technical Analysis</a>
+                    <a href="/fundamental_analysis.html">Fundamental Analysis</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbutton">Funds</button>
+                <div class="dropdown-content">
+                    <a href="page-6.html">Planning Finances</a>
+                    <a href="page-5.html">Financial Data</a>
+                    <a href="personal-finance.html">Personal Finance</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbutton">Plans</button>
+                <div class="dropdown-content">
+                    <a href="retirement_plan_calculator.html">Retirement Plan</a>
+                    <a href="systematic plan calculator.html">Systematic Plan</a>
+                    <a href="summaries.html">Book Summaries</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbutton">Trade</button>
+                <div class="dropdown-content">
+                    <a href="future_trading.html">Future Trading</a>
+                    <a href="option_strategies.html">Option Strategies</a>
+                    <a href="market_tax.html">Market and Tax</a>
+                </div>
+            </div>
+            <div><a href="login_process.html"><img class=login src="resources/icons8-login-100.png"
+                        alt="Login Page"></a></div>
+            <div><a href="register_process.html"><img class=login src="resources/add-user.png" alt="Sign Up"></a>
+            </div>
+        </div> <!-- page title  --> 
+    </header>
+    <main> <!--main content-->
+        <section>
+            <h2>Systematic Investment Plan Calculator</h2>
+            <div id="center">SIPs Can Help You Accomplish Your Financial Goals.</div>
+            <div class="justi">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIP – Systematic Investment Plan is a disciplined way of investing wherein 
+                a fixed amount of money is invested in a pre-defined mutual fund scheme at a fixed interval. You decide the amount, the 
+                SIP date and the schemes in which you wish to invest. One can plan different life goals be it such as children’s future, 
+                retirement, international holiday, holiday home, etc.</div><br>
+            <div class="justi">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A type of investment plan provided by mutual fund providers is called a 
+                Systematic Investment Plan (SIP). One can periodically (weekly, monthly, or quarterly) put a little amount into a chosen 
+                mutual fund by using a SIP. SIP provides retail investors with a passive, disciplined investing strategy that can build 
+                long-term wealth (using the power of compounding). The sum is invested on a regular basis (often monthly), which lessens 
+                the effect of market volatility.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This calculator helps you to estimate your monthly 
+                SIP investment's predicted returns and wealth gain. Based on an anticipated annual return rate, you can obtain a rough 
+                estimate of the maturity amount for any monthly SIP.</div>    
+        </section> 
+        <section id="grid">
+            <form>
+                <fieldset>
+                    <legend>Calculate</legend>
+                    <div class="form">E-Mail: <input type="email" name="email" id="email"></div>
+                    <div class="form">I will invest: <input type="number" name="sip" id="sip"> &dollar; every month</div>
+                    <div class="form">Number of years: <input type="number" name="years" id="years"></div>
+                    <div class="form">Expected return (per annum): <input type="number" step="any" name="er" id="er">&percnt;</div><!-- step = "any" is used  so decimal input is possible, as required by return rate.-->
+                    <div class="form"><input type="button" name="sub" id="sub" onclick="subfun()" value="Submit"><!-- submit button for process.html  -->
+                    <input type="reset" name="resetform" value="Reset" id="reset"></div>
+                </fieldset>
+            </form>
+            <section id="text">
+                
+                <h3 class="h3">Trending SIPs to invest in  <img src="resources/sip-trend.png" alt="trend icon"></h3>
+                <div>
+                    <ul>
+                        <li>KIBC Wod Gndy SIP, 12.4&percnt; annual return.</li>
+                        <li>Cotia Alan SIP, 11.9&percnt; annual return.</li>
+                        <li>Halifax Ummer SIP, 11.65&percnt; annual return.</li>
+                        <li>Lancster Maritam SIP, 11.34% annual return.</li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+        <div>
+            <p id="result"></p>
+            <h3 class="h3">Is SIP a mutual fund?</h3>
+            <div class="justi">People believe that SIP is either not a mutual fund or that it is. SIP, however, is a method of investing 
+                and not a fund, programme, stock, or outlet for investing. It is a means of making recurring investments in a fund or 
+                plan of your choosing.
+            </div>
+            <h3 class="h3">What are the benefits of SIP?</h3>
+            <div>
+                <ul>
+                    <li class="justi">SIP fosters discipline because it allows you to invest a specific amount on a regular basis. At a predetermined 
+                        interval, a fixed sum is automatically invested. To put money to work, one does not need to invest regular time.</li>
+                    <li class="justi">You can start small and there is no need to have a lot of money to start a SIP. A SIP of even Rs. 500 per month 
+                        is sufficient to start with. And then depending on the goals and aspirations, one can increase the amount.</li>
+                    <li class="justi">You don't have to be concerned about market timing when using SIP. Just continue to invest regardless of the 
+                        state of the market. You obtain more units as a result when the price is low and fewer units as a result of 
+                        doing this when the price is high. This ultimately results in a declining average cost per unit over time, 
+                        also known as dollar cost averaging.</li>
+                    <li class="justi">Take advantage of the power of compounding by using a SIP to invest money over a longer period of time. As your 
+                        investment grows in value over time, the principal is increased as well, which leads to an increase in returns. 
+                        The repetition of this process results in a large corpus. The magic of compounding operates in this manner.</li>
+                </ul>
+            </div>
+            <mark>#Maple Tips</mark>
+            <h3 class="h3" id="space">SIP should be started when the markets are high and should be stopped when the markets fall. Is that true?</h3>
+            <div class="justi">Absolutely not, and the majority of investors really end up doing this. Nobody can actually forecast whether 
+                the markets will go up or down. Since SIP offers rupee-cost averaging, it shouldn't matter if the markets are rising or 
+                falling. Remaining involved is the most crucial thing to keep in mind. This raises the likelihood of accruing riches over 
+                time.
+            </div>
+        </div>       
+    </main>
+    <br>
+    <br>
+    <footer>    
+        <div class="footer-content">
+
+            <h3>Maple Traders</h3>
+            <p>We ate Maple traders help you with all your investing needs. <br>
+                Start your investing journey with mutual funds or start investing in the stock market.<br>
+                Get in touch today!</p>
+
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="footer-bottom">
+            <p>copyright &copy;2022 <a href="#">Maple Traders</a></p>
+
+        </div>
+
+        <div class="footer-menu">
+            <ul class="f-menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">Mutual Funds</a></li>
+                <li><a href="">Stock Market</a></li>
+                <li><a href="">Retirement Plan Calculator</a></li>
+            </ul>
+        </div>
+        <!-- site footer  -->
+    </footer>
+    <script>
+
+        function subfun() {
+
+        let p = document.getElementById('sip').value;
+        let yearsv = document.getElementById('years').value;
+        let erv = document.getElementById('er').value;
+
+        let n = yearsv*12;
+
+        let i = erv/12;
+
+        let maturev = p * ((((1+ i)* n -1)/i)*(1+i));
+
+        document.getElementById('result').innerHTML = `After ${yearsv} years, you will get ${maturev} &dollar;`;
+
+        }
+
+    </script>
+    </body>
+</html>
