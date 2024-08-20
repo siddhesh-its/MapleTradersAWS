@@ -1,7 +1,5 @@
 ## Project : Maple trader on AWS
 
-## Page Link : http://mapletraders.s3-website-us-east-1.amazonaws.com
-
 ### Step #1:  Website
 - Creating a functional financial website as per the requirements.
 
